@@ -1,0 +1,9 @@
+Host sentinelone.*
+  IdentityFile ~/.ssh/id_ed25519_sentinelone
+
+Host *github.com
+  HostName github.com
+
+Host *
+  IdentityFile ~/.ssh/id_ed25519
+  AddKeysToAgent yes
