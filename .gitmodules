@@ -7,3 +7,6 @@
 [submodule "/Users/firash/.dotfiles/bash-it"]
 	path = /Users/firash/.dotfiles/bash-it
 	url = https://github.com/Bash-it/bash-it.git
+[submodule "bash-it"]
+	path = bash-it
+	url = https://github.com/Bash-it/bash-it.git
