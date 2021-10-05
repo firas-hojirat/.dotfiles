@@ -1,0 +1,7 @@
+alias dive='docker run --rm -it -w /mnt -v $(pwd):/mnt -v ~/.dive.yaml:~/.dive.yaml -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive:latest'
+alias gitlab-runner='docker run --rm -it -w /mnt -v $(pwd):/mnt -v /var/run/docker.sock:/var/run/docker.sock gitlab/gitlab-runner'
+alias shellcheck='docker run --rm -w /mnt -v $(pwd):/mnt koalaman/shellcheck:stable'
+alias pack='docker run --rm -it -w /mnt -v $(pwd):/mnt buildpacksio/pack'
+
+curl https://raw.githubusercontent.com/nektos/act/master/install.sh | bash
+sudo /bin/sh -c 'wget https://github.com/earthly/earthly/releases/latest/download/earthly-"$(uname -s | tr '[:upper:] '[:lower:]')"-amd64 -O /usr/local/bin/earthly && chmod +x /usr/local/bin/earthly && /usr/local/bin/earthly bootstrap --with-autocomplete'
